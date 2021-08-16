@@ -1,17 +1,16 @@
-class User
+class Generator
     def generate
-        raise "NotImplemented"
+      raise "NotImplemented"
     end
 end
-
-class ConstuctorPaySlipGenerator < User
-    def generate
-        # Code to generate payslip
-    end
-end
-
-class FulltimePaySlipGenerator < User
+class ContractorPayslipGenerator < Generator
     def generate
         # Code to generate payslip
     end
 end
+class FullTimePayslipGenerator < Generator
+    def generate
+        # Code to generate payslip
+    end
+end
+  
